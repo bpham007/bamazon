@@ -1,0 +1,8 @@
+.modBottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.rr {
+    border: 2px solid red;
+}

@@ -1,0 +1,135 @@
+<nav class="navbar navbar-expand-lg bg-primary border-bottom border-body" data-bs-theme="dark">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="#" class="navbar-brand">
+         <img
+            src="https://static.vecteezy.com/system/resources/previews/016/577/639/original/ba-logo-monogram-design-template-free-vector.jpg"
+            alt="amazonLogo" width="30" height="24" style="border-radius: 4px;">Bamazon
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarTogglerTopLeft"
+         aria-controls="navbarTogglerTopLeft" aria-expanded="false" aria-label="TogglerTopLeftNavigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarTogglerTopRight"
+         aria-controls="navbarTogglerTopRight" aria-expanded="false" aria-label="TogglerTopRightNavigation"><span
+            class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerTopLeft"><!-- TopLeft Toggler -->
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a href="#" class="nav-link modBottom">Deliver to Name<!-- {{ name }} --> <span><img
+                        src="https://th.bing.com/th/id/R.f265b1bfdcf77d2cd550882c15bf7977?rik=RZGpl03FYAwWJQ&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f2017%2f05%2fMap-Marker-PNG-Picture.png&ehk=wBDODeX2dBoxrTGgrpwu4xXzVNnUycDEZEY4PR1dy9k%3d&risl=&pid=ImgRaw&r=0"
+                        alt="location icon" width="18" height="20">Johns Creek 30022<!-- {{ location }} --></span>
+               </a>
+            </li>
+            <form class="d-flex" role="search">
+               <button>All</button>
+               <input type="from-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit"><img
+                     src="https://th.bing.com/th/id/OIP.knKEwCcFtMQMckgaIUIKMwHaHa?w=159&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7"
+                     alt="Search Icon" width="20" height="14">
+               </button>
+            </form>
+         </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarTogglerTopRight"><!-- TopRight Toggler -->
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown" appDropdown #z="appDropDown">
+               <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="https://pngimg.com/uploads/flags/flags_PNG14592.png" alt="English" width="30" height="24">EN
+               </a>
+               <ul class="dropdown-menu" [ngClass]="{'show':z.isOpen}">
+                  <label><input type="radio" name="language" value="english">English - EN</label>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <label><input type="radio" name="language" value="spanish">espanol - ES</label>
+                  <li><a href="#" class="dropdown-item">Learn more</a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <label><img src="https://pngimg.com/uploads/flags/flags_PNG14592.png" alt="English" width="20"
+                        height="14">You are shopping on Bamazon.com</label>
+                  <li><a href="#" class="dropdown-item">Change country/region</a></li>
+               </ul>
+            </li>
+            <li class="nav-item dropdown" appDropdown #r="appDropDown">
+               <a href="#" class="nav-link dropdown-toggle modBottom" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Hello, Jenny <span>Accounts & Lists</span>
+               </a>
+               <ul class="dropdown-menu" [ngClass]="{'show': r.isOpen}">
+                  <li><a href="#" class="dropdown-item">Buy it again</a></li>
+                  <li><a href="#" class="dropdown-item">Your Lists</a></li>
+                  <li><a href="#" class="dropdown-item">Your Account</a></li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a href="#" class="nav-link modBottom">Returns <span class="denom">&
+                     Orders</span></a><!-- Span to bottom in css -->
+            </li>
+            <li class="nav-item">
+               <a href="#" class="nav-link"><img src="https://cdn-icons-png.flaticon.com/512/6442/6442372.png"
+                     alt="Cart Icon" width="30" height="24">Cart</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+</nav>
+<nav class="navbar navbar-expand-lg" style="background-color: aliceblue;"><!-- Bottom Toggler -->
+   <div class="container-fluid">
+      <button>All</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarTogglerBottom"
+         aria-controls="navbarTogglerBottom" aria-expanded="false" aria-label="TogglerBottomNavigation"><span
+            class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerBottom">
+         <ul class="navbar-nav">
+            <li class="nav-item dropdown" appDropdown #a="appDropDown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Medical Care
+               </a>
+               <ul class="dropdown-menu" [ngClass]="{'show': a.isOpen}">
+                  <h4>Explore Medical Care</h4>
+                  <li><a href="#" class="dropdown-item">one medical</a></li>
+                  <li><a href="#" class="dropdown-item">pharmacy</a></li>
+                  <li><a href="#" class="dropdown-item">clinic</a></li>
+                  <li><a href="#" class="dropdown-item">Explore more Medical Care</a></li>
+               </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Prime Video</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Keep Shopping For</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Buy Again</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Bamazon Basics</a></li>
+            <li class="nav-item dropdown" appDropdown #b="appDropDown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Prime</a>
+               <ul class="dropdown-menu" [ngClass]="{'show': b.isOpen}">
+                  <h4>On-demand care-priced for Prime</h4>
+                  <p>Get virtual medical care where and when you need it for only $9/mo
+                     with Prime</p>
+                  <li>
+                     <a href="#" class="dropdown-item">
+                        <div><img
+                              src="https://th.bing.com/th/id/OIP.MnrfRXvkiD87S-1cPmwJ0gHaHa?w=225&h=220&c=7&r=0&o=5&dpr=1.7&pid=1.7"
+                              alt="Iphone" width="100" height="84">
+                           <!-- How to add 3 icon on top right of img -->
+                        </div>
+                     </a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Get started</a></li>
+                  <li>
+                     <a href="#" class="dropdown-item"><img
+                           src="https://th.bing.com/th/id/OIP.wrTCi6VPARu1sGObpslE3wHaHa?w=206&h=206&c=7&r=0&o=5&dpr=1.7&pid=1.7"
+                           alt="Prime" width="40" height="34">
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+      <div>
+         <button class="btn btn-outline-primary"><a href="#">Reinventing wholesale, join Amazon Business</a></button>
+         <!-- Even though its not in the nav-link group, does it still need a class? How to remove underline? -->
+      </div>
+   </div>
+</nav>

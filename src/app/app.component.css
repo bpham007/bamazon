@@ -1,0 +1,26 @@
+.rr {
+    border: 2px solid red;
+}
+.pp {
+    border: 2px solid purple;
+}
+.gg {
+    border: 2px solid green;
+}
+.bb {
+    border: 2px solid blue;
+}
+
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.app-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
